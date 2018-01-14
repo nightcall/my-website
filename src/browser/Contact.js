@@ -13,7 +13,7 @@ export default class Contact extends React.Component {
             },
             method: 'post',
             credentials: 'same-origin',
-            body: 'test=test'
+            body: 'form-name=contact&test=test'
         })
         .then(() => console.log('ok'))
 	}
