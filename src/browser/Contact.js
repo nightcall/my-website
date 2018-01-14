@@ -6,14 +6,14 @@ export default class Contact extends React.Component {
 	}
 
 	handleSubmit = () => {
-        fetch('/post', {
+        fetch('/', {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             method: 'post',
             credentials: 'same-origin',
-            body: 'test'
+            body: 'test=test'
         })
         .then(() => console.log('ok'))
 	}
