@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from './Slider';
 
 export default class ProjectList extends React.Component {
 	constructor(props) {
@@ -6,6 +7,16 @@ export default class ProjectList extends React.Component {
 	}
 
 	render() {
+
+		return(
+			<Slider>
+				<div><h3>1</h3></div>
+				<div><h3>2</h3></div>
+				<div><h3>3</h3></div>
+				<div><h3>4</h3></div>
+			</Slider>
+		);
+		/*
 		return(
 			<div id='project-list'>
 				{this.props.projects.map(p => {
@@ -19,5 +30,6 @@ export default class ProjectList extends React.Component {
 				})}
 			</div>
 		);
+		*/
 	}
 }

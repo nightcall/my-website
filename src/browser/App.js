@@ -9,6 +9,10 @@ export default class App extends React.Component {
 	constructor(props) {
 		super(props);
 
+		this.state = {
+			lang: 'en'
+		};
+
 		this.projects = [
 			{
 				id: 0,
@@ -28,9 +32,14 @@ export default class App extends React.Component {
 		];
 	}
 
+	handleLangChange = (lang) => {
+		console.log('ok')
+		this.setState({lang: 'fr'});
+	}
+
 	render() {
 		return(
-			<Layout>
+			<Layout lang='frrr' handleLangChange={this.handleLangChange} >
 				<Introduction />
 				<ProjectList projects={this.projects} />
 				<AboutMe />

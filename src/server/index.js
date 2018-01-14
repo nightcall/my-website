@@ -11,7 +11,7 @@ app.get('*', (req, res) => {
 		<html>
 			<head>
 				<link rel='stylesheet' href='/style.css' />
-				<title>Yassine Blue - Portfolio</title>
+				<title>Yassine Blue</title>
 			</head>
 			<body>
 				<div id='root'></div>

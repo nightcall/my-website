@@ -63,3 +63,21 @@ nav div h3 a {
 	flex-direction: row;
 	justify-content: center;
 }
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact form input {
+	border: 1px solid grey;
+	padding: 5px;
+}
+
+#contact form textarea {
+	border: 1px solid grey;
+	resize: none;
+	padding: 5px;
+}
