@@ -9,12 +9,24 @@ export default class ProjectList extends React.Component {
 	render() {
 
 		return(
-			<Slider>
-				<div><h3>1</h3></div>
-				<div><h3>2</h3></div>
-				<div><h3>3</h3></div>
-				<div><h3>4</h3></div>
-			</Slider>
+			<div id='project-list'>
+				<div className='container_1024'>
+					<h1>Some of my work</h1>
+					<div className='project'>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
+						<Slider />
+					</div>
+					<div className='project'>
+						<p><img src='/project-thumbnail.png' /></p>
+						<p style={{textAlign: 'left'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
+					</div>
+					<div className='project'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
+						<p><img src='/project-thumbnail.png' /></p>
+					</div>
+				</div>
+			</div>
 		);
 		/*
 		return(

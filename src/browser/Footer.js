@@ -3,9 +3,14 @@ import React from 'react';
 export default (props) => {
 	return(
 		<footer>
-			<p>
-				Copyright &copy; Yassine Blue.
-			</p>
+			<div className='container_1024'>
+				<p style={{
+					textAlign: 'center',
+					padding: '10px'
+				}}>
+					Copyright &copy; Yassine Hermellin - 2018
+				</p>
+			</div>
 		</footer>
 	);
 };
