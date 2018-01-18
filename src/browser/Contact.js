@@ -66,10 +66,10 @@ export default class Contact extends React.Component {
 							</p>
 						</div>
 						<form onSubmit={this.handleSubmit} >
-							<input type='text' name='email' placeholder='Your email' onChange={this.setData}/>
-							<input type='text' name='phone' placeholder='Your phone' onChange={this.setData}/>
-							<input type='text' name='name' placeholder='Your name' onChange={this.setData}/>
-							<textarea name='message' placeholder='Your message' onChange={this.setData}/>
+							<input value={this.state.data.email} type='text' name='email' placeholder='Your email' onChange={this.setData}/>
+							<input value={this.state.data.phone} type='text' name='phone' placeholder='Your phone' onChange={this.setData}/>
+							<input value={this.state.data.name} type='text' name='name' placeholder='Your name' onChange={this.setData}/>
+							<textarea value={this.state.data.message} name='message' placeholder='Your message' onChange={this.setData}/>
 							<button type='submit'>Send</button>
 						</form>
 					</div>
