@@ -6,7 +6,8 @@ export default (props) => {
 			<div className='container_1024'>
 				<p style={{
 					textAlign: 'center',
-					padding: '10px'
+					padding: '10px',
+					fontFamily: 'Consolas'
 				}}>
 					Copyright &copy; Yassine Hermellin - 2018
 				</p>

@@ -5,6 +5,7 @@ export default class Contact extends React.Component {
 		super(props);
 
 		this.state = {
+			formEnabled: true,
 			data: {
 				name: '',
 				email: '',
@@ -55,23 +56,30 @@ export default class Contact extends React.Component {
 	}
 
 	render() {
+		const inputStyle = {width: '200px'};
+
 		return(
 			<div id='contact'>
 				<div className='container_1024'>
 					<h1>Contact me</h1>
-					<div>
-						<div>
+					<div id='contact-container'>
+						<div id='contact-container-left'>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida.
+								Do you want to know more about what I can do ?
+								<br />Do you want to talk to me about your project ?
+								<br /><br />
+								Contact me now !<br /><br />
+								<button>Send</button>
 							</p>
 						</div>
-						<form onSubmit={this.handleSubmit} >
-							<input value={this.state.data.email} type='text' name='email' placeholder='Your email' onChange={this.setData}/>
-							<input value={this.state.data.phone} type='text' name='phone' placeholder='Your phone' onChange={this.setData}/>
-							<input value={this.state.data.name} type='text' name='name' placeholder='Your name' onChange={this.setData}/>
-							<textarea value={this.state.data.message} name='message' placeholder='Your message' onChange={this.setData}/>
-							<button type='submit'>Send</button>
-						</form>
+						<div id='contact-container-right'>
+							<form style={{width: '400px'}}>
+								<input style={inputStyle} value={this.state.data.name} type='text' name='name' placeholder='John Doe' onChange={this.setData}/>
+								<input style={inputStyle} value={this.state.data.email} type='text' name='email' placeholder='john@doe.net' onChange={this.setData}/>
+								<input style={inputStyle} value={this.state.data.phone} type='text' name='phone' placeholder='00XX XXX XXX XXX' onChange={this.setData}/>
+								<textarea style={{height: '150px'}} value={this.state.data.message} name='message' placeholder={`I'd like to work with you`} onChange={this.setData}/>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

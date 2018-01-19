@@ -4,8 +4,13 @@ import ProjectList from './ProjectList';
 import Introduction from './Introduction';
 import Contact from './Contact';
 import AboutMe from './AboutMe';
+import PropTypes from 'prop-types';
 
 export default class App extends React.Component {
+	static childContextTypes = {
+		lang: PropTypes.string
+	};
+
 	constructor(props) {
 		super(props);
 
@@ -33,12 +38,16 @@ export default class App extends React.Component {
 		];
 	}
 
+	getChildContext() {
+		return {lang: 'en'};
+	}
+
 	render() {
 		return(
 			<Layout>
 				<Introduction />
-				<ProjectList projects={this.projects} />
 				<AboutMe />
+				<ProjectList projects={this.projects} />
 				<Contact />
 			</Layout>
 		);
