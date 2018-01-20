@@ -7,7 +7,7 @@ export default class AboutMe extends React.Component {
 
 	render() {
 		return(
-			<div id='about-me' style={{backgroundColor: 'white'}}>
+			<div id='about'>
 				<div className='container_1024'>
 					<h1>What can I do for you ?</h1>
 
@@ -15,9 +15,16 @@ export default class AboutMe extends React.Component {
 						<div className='about-col'>
 							<h3>Design</h3>
 							<img src='/design.svg' alt='design' />
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
-							</p>
-						</div>
+							{/*<p>
+							<span className='underline'>Conception de logotype, d'identité visuelle et
+							webdesign</span><br /><br />Nous convenons d'abord ensemble d'un cahier des charges qui permettra d'établir les objectifs
+							finaux du design du projet. <br /><br />Je me charge ensuite de réaliser ces objectifs tout en faisant attention de suivre
+							les impératifs ergonomiques (Expérience utilisateur) et visuels (Respect de la chartre graphique, prise en compte du public ciblé) fixés
+							précèdemmment.<br /><br />
+							Technologies et softwares utilisés: <span className='underline'>Adobe Première, Illustrator, InDesign</span></p>
+						*/}
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
+							</p></div>
 						<div className='about-col'>
 							<h3>Develop</h3>
 							<img src='/develop.svg' alt='design' />

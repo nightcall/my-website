@@ -20,14 +20,14 @@ export default class NavBar extends React.Component {
 				<nav>
 					<div>
 						<h3><a href='/'>{tr('navbar-home')}</a></h3>
-						<h3><a href='#project-list'>{tr('navbar-projects')}</a></h3>
-						<h3><a href='#about-me'>{tr('navbar-about')}</a></h3>
+						<h3><a href='#projects'>{tr('navbar-projects')}</a></h3>
+						<h3><a href='#about'>{tr('navbar-about')}</a></h3>
 						<h3><a href='#contact'>{tr('navbar-contact')}</a></h3>
 					</div>
 					<div>
-						<h6><a href='#' onClick={this.props.handleLangChange} >EN</a></h6>
-						<h6><a href='#'>ES</a></h6>
-						<h6><a href='#'>FR</a></h6>
+						<h6><a href='/' className={lang == 'en' ? 'selectedLang' : ''} onClick={this.props.handleLangChange} >EN</a></h6>
+						<h6><a href='/es/' className={lang == 'es' ? 'selectedLang' : ''}>ES</a></h6>
+						<h6><a href='/fr/' className={lang == 'fr' ? 'selectedLang' : ''}>FR</a></h6>
 					</div>
 				</nav>
 			</div>

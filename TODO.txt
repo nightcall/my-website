@@ -1,0 +1,7 @@
+SLIDESHOW -> regrouper par theme ->
+texte qui change (sauf le titre - ex: 'design')
+
+changer couleur bouton ? rouge -> :hover blanc
+couleur design develop video => pas la meme
+
+swap navbar prjcts><about

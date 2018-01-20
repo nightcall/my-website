@@ -1,4 +1,5 @@
 import React from 'react';
+import Translation from './Translation';
 
 export default class Contact extends React.Component {
 	constructor(props) {
@@ -56,7 +57,19 @@ export default class Contact extends React.Component {
 	}
 
 	render() {
-		const inputStyle = {width: '200px'};
+		const lang = 'en';
+		/* TODOOOOOOOOOOOOOOOOOOOOOOOO */
+		const tr = Translation(lang);
+		const inputStyle = {width: '300px'};
+		const {
+			formEnabled,
+			data: {
+				email,
+				phone,
+				name,
+				message
+			}
+		} = this.state;
 
 		return(
 			<div id='contact'>
@@ -69,15 +82,23 @@ export default class Contact extends React.Component {
 								<br />Do you want to talk to me about your project ?
 								<br /><br />
 								Contact me now !<br /><br />
-								<button>Send</button>
+								<button disabled='true' >Send</button>
 							</p>
 						</div>
 						<div id='contact-container-right'>
 							<form style={{width: '400px'}}>
-								<input style={inputStyle} value={this.state.data.name} type='text' name='name' placeholder='John Doe' onChange={this.setData}/>
-								<input style={inputStyle} value={this.state.data.email} type='text' name='email' placeholder='john@doe.net' onChange={this.setData}/>
-								<input style={inputStyle} value={this.state.data.phone} type='text' name='phone' placeholder='00XX XXX XXX XXX' onChange={this.setData}/>
-								<textarea style={{height: '150px'}} value={this.state.data.message} name='message' placeholder={`I'd like to work with you`} onChange={this.setData}/>
+								<input style={inputStyle} value={name} type='text' name='name'
+									placeholder={tr('contact-placeholder-name')} onChange={this.setData}
+									disabled={!formEnabled} />
+								<input style={inputStyle} value={email} type='text' name='email'
+									placeholder={tr('contact-placeholder-email')} onChange={this.setData}
+									disabled={!formEnabled} />
+								<input style={inputStyle} value={phone} type='text' name='phone'
+									placeholder={tr('contact-placeholder-phone')} onChange={this.setData}
+									disabled={!formEnabled} />
+								<textarea style={{height: '150px'}} value={message} name='message'
+									placeholder={tr('contact-placeholder-message')} onChange={this.setData}
+									disabled={!formEnabled} />
 							</form>
 						</div>
 					</div>

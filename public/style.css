@@ -93,8 +93,8 @@ nav div h6 a:hover {
 	}
 }
 
-#project-list,
-#about-me,
+#projects,
+#about,
 #contact {
 	display: flex;
 	flex-direction: row;
@@ -102,18 +102,18 @@ nav div h6 a:hover {
 	background-color: white;
 }
 
-#about-me {
+#about {
 	background-image: url('/bg-about-me.png');
 	background-repeat: repeat-x;
 	padding-bottom: 70px;
 }
 
-#project-list {
+#projects {
 	background-color: #f7f7f7;
 }
 
-#project-list h1,
-#about-me h1,
+#projects h1,
+#about h1,
 #contact h1 {
 	color: #636363;
 	font-size: 40px;
@@ -160,7 +160,7 @@ strong {
 	color: #7c7c7c;
 }
 
-.underline:hover {
+a.underline:hover {
 	color: #f74567;
 	border-bottom: 1px dashed #f74567;
 }
@@ -231,10 +231,10 @@ footer {
 	width: 500px;
 	height: 300px;
 	flex-grow: 1;
-	border-bottom: 5px solid #dadada;
-	border-left: 5px solid #dadada;
+	border: 1px solid #dadada;
+	/*border-left: 5px solid #dadada;
 	border-top: 1px solid #dadada;
-	border-right: 1px solid #dadada;
+	border-right: 1px solid #dadada;*/
 }
 
 .slider-arrows {
@@ -300,6 +300,10 @@ footer {
 	justify-content: space-around;
 }
 
+.about-col {
+	flex-grow: 0;
+}
+
 .about-col img {
 	width: 100px;
 	margin: auto;
@@ -320,6 +324,11 @@ footer {
 	border-radius: 5px;
 }
 
+.about-col p {
+	margin-top: 20px;
+	text-align: center;
+}
+
 .contact-link {
 	font-size: 30px;
 	padding: 5px;
@@ -335,4 +344,13 @@ footer {
 .contact-link:hover {
 	color: white;
 	background-color: #f74567;
+}
+
+button:disabled,
+button[disabled] {
+	background-color: blue;
+}
+
+.selectedLang {
+	color: #f74567;
 }

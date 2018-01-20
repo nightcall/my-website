@@ -9,21 +9,21 @@ export default class ProjectList extends React.Component {
 	render() {
 
 		return(
-			<div id='project-list'>
+			<div id='projects'>
 				<div className='container_1024'>
 					<h1>Some of my work</h1>
 					<div className='project'>
 						<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
-						<Slider src='/project-thumbnail.png'/>
+						<Slider src={0} numSlides={2} />
 					</div>
 					<div className='project'>
-						<Slider src='/0.png' />
+						<Slider src={0} numSlides={2} />
 						<p style={{textAlign: 'left'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
 					</div>
 					<div className='project'>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
-						<Slider />
+						<Slider src={0} numSlides={2} />
 					</div>
 				</div>
 			</div>
