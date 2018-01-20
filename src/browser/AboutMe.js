@@ -10,7 +10,28 @@ export default class AboutMe extends React.Component {
 			<div id='about-me' style={{backgroundColor: 'white'}}>
 				<div className='container_1024'>
 					<h1>What can I do for you ?</h1>
-					<img src='/braces.svg' alt='braces' style={{width: '200px'}}/>
+
+					<div className='about-row'>
+						<div className='about-col'>
+							<h3>Design</h3>
+							<img src='/design.svg' alt='design' />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
+							</p>
+						</div>
+						<div className='about-col'>
+							<h3>Develop</h3>
+							<img src='/develop.svg' alt='design' />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
+							</p>
+						</div>
+						<div className='about-col'>
+							<h3>Direct</h3>
+							<img src='/video.svg' alt='design' />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
+							</p>
+						</div>
+					</div>
+					{/*<img src='/braces.svg' alt='braces' style={{width: '200px'}}/>
 					<p>
 						I can help you develop your <strong>web application</strong>. I have a wide set of skills including <span className='underline'>HTML5, CSS3, Javascript (ReactJS, Express, Node)
 					</span>I also have some experience using PHP and SQL (MySQL).<br />
@@ -18,7 +39,7 @@ export default class AboutMe extends React.Component {
 					<br />
 					I am experienced in design (logo design, webdesign).
 					<br /><br />
-					I am also good at motion design </p>
+					I am also good at motion design </p>*/}
 				</div>{/*
 
 				DONNER DES EXEMPLES CONCRETS 

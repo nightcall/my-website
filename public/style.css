@@ -21,7 +21,7 @@
 
 body {
 	background-color: #f7f7f7;
-	color: #2a2a2a;
+	color: #7c7c7c;
 }
 
 input:focus,
@@ -45,6 +45,7 @@ button:focus {
 	justify-content: center;
 	align-items: center;
 	position: fixed;
+	color: #7c7c7c;
 	width: 100vw;
 	top: 0;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
@@ -69,13 +70,13 @@ nav div {
 
 nav div h3,
 nav div h6 {
-	padding-right: 10px
+	padding-right: 20px
 }
 
 nav div h3 a,
 nav div h6 a {
 	text-decoration: none;
-	color: #636363;
+	color: black;
 	font-family: Helvetica;
 }
 
@@ -102,6 +103,12 @@ nav div h6 a:hover {
 }
 
 #about-me {
+	background-image: url('/bg-about-me.png');
+	background-repeat: repeat-x;
+	padding-bottom: 70px;
+}
+
+#project-list {
 	background-color: #f7f7f7;
 }
 
@@ -109,9 +116,11 @@ nav div h6 a:hover {
 #about-me h1,
 #contact h1 {
 	color: #636363;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	font-family: Consolas;
+	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: black;
+	text-align: center;
 }
 
 strong {
@@ -144,19 +153,16 @@ strong {
 	width: 200px;
 }
 
-#introduction p a {
-	background-color: #f9bbc7;
-	text-decoration: none;
-	color: #2a2a2a;
-}
-
-#introduction p a:hover {
-	background-color: #f895a7;
-}
-
 .underline {
-	border-bottom: 1px dashed grey;
+	border-bottom: 1px dashed #7c7c7c;
 	font-family: OpenSansLight;
+	text-decoration: none;
+	color: #7c7c7c;
+}
+
+.underline:hover {
+	color: #f74567;
+	border-bottom: 1px dashed #f74567;
 }
 
 #contact form {
@@ -270,15 +276,63 @@ footer {
 }
 
 #contact button {
-	padding: 5px;
-	background-color: #fb728b;
-	color: white;
-	border: none;
-	font-family: Consolas;
 	font-size: 20px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #f74567;
+	border: 1px solid #f74567;
+	border-radius: 2px;
+	text-decoration: none;
+	font-family: OpenSansLight;
 	cursor: pointer;
+	background-color: white;
 }
 
 #contact button:hover {
-	background-color: #f895a7;
+	color: white;
+	background-color: #f74567;
+}
+
+.about-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.about-col img {
+	width: 100px;
+	margin: auto;
+}
+
+.about-col h3 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.about-col {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	background-color: #f7f7f7;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.contact-link {
+	font-size: 30px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #f74567;
+	border: 1px solid #f74567;
+	border-radius: 2px;
+	text-decoration: none;
+	font-family: OpenSansLight;
+}
+
+.contact-link:hover {
+	color: white;
+	background-color: #f74567;
 }

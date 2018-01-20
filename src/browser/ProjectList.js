@@ -10,15 +10,15 @@ export default class ProjectList extends React.Component {
 
 		return(
 			<div id='project-list'>
-				<div className='container_1024' style={{backgroundImage: 'url("/bg-test.png")'}}>
+				<div className='container_1024'>
 					<h1>Some of my work</h1>
 					<div className='project'>
 						<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
-						<Slider />
+						<Slider src='/project-thumbnail.png'/>
 					</div>
 					<div className='project'>
-						<Slider />
+						<Slider src='/0.png' />
 						<p style={{textAlign: 'left'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
 					</div>
 					<div className='project'>
