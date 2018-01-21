@@ -38,7 +38,7 @@ export default class Project extends React.Component {
 		const { currentSlide } = this.state;
 
 		const desc = <p>{tr('project-description')[id][currentSlide]}</p>;
-		const content = this.props.video ? <p>Video</p> : (
+		const content = this.props.video ? <iframe src="https://player.vimeo.com/video/107622035?title=0&byline=0&portrait=0" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> : (
 			<Slider id={id} currentSlide={currentSlide}
 				handleNextSlide={this.handleNextSlide}
 				handlePreviousSlide={this.handlePreviousSlide} />

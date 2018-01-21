@@ -6,9 +6,9 @@ const translations = {
 		'navbar-contact': 'Contact',
 
 		'contact-section-title': 'Contact me',
-		'contact-placeholder-name': 'John Doe',
-		'contact-placeholder-email': 'john@doe.net',
-		'contact-placeholder-phone': '00XX XXX XXX XXX',
+		'contact-placeholder-name': 'Your name',
+		'contact-placeholder-email': 'Your email',
+		'contact-placeholder-phone': 'Your phone',
 		'contact-placeholder-message': 'I\'m interested in working with you',
 
 		'project-description': [
@@ -36,9 +36,9 @@ const translations = {
 		'navbar-contact': 'Contact',
 
 		'contact-section-title': 'Me contacter',
-		'contact-placeholder-name': 'Jean Martin',
-		'contact-placeholder-email': 'jean@martin.net',
-		'contact-placeholder-phone': '00XX XXX XXX XXX',
+		'contact-placeholder-name': 'Votre nom',
+		'contact-placeholder-email': 'Votre email',
+		'contact-placeholder-phone': 'Votre téléphone',
 		'contact-placeholder-message': 'Je voudrais travailler avec vous',
 
 		'project-description': [
