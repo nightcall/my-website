@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from './Slider';
+import Project from './Project';
 
 export default class ProjectList extends React.Component {
 	constructor(props) {
@@ -12,19 +12,9 @@ export default class ProjectList extends React.Component {
 			<div id='projects'>
 				<div className='container_1024'>
 					<h1>Some of my work</h1>
-					<div className='project'>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
-						<Slider src={0} numSlides={2} />
-					</div>
-					<div className='project'>
-						<Slider src={0} numSlides={2} />
-						<p style={{textAlign: 'left'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
-					</div>
-					<div className='project'>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut</p>
-						<Slider src={0} numSlides={2} />
-					</div>
+					<Project id={0} key={0} numSlides={3} />
+					<Project id={1} key={1} numSlides={3} />
+					<Project id={2} key={2} numSlides={0} video='http://vimeo.com?v=25eZthx4' />
 				</div>
 			</div>
 		);

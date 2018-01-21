@@ -11,21 +11,19 @@ export default class App extends React.Component {
 		lang: PropTypes.string
 	};
 
-	static defaultProps = {
-		lang: 'en'
-	};
-
 	constructor(props) {
 		super(props);
 	}
 
 	getChildContext() {
-		if(this.props.lang != 'en'
-		&& this.props.lang != 'fr'
-		&& this.props.lang != 'es')
-			return {lang: 'en'};
+		const { lang } = this.props.match.params;
 		
-		return {lang: this.props.lang};
+		if(lang === 'en'
+		|| lang === 'es'
+		|| lang === 'fr')
+			return {lang: lang};
+		
+		return {lang: 'en'};
 	}
 
 	render() {

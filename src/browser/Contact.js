@@ -74,7 +74,7 @@ export default class Contact extends React.Component {
 		return(
 			<div id='contact'>
 				<div className='container_1024'>
-					<h1>Contact me</h1>
+					<h1>{tr('contact-section-title')}</h1>
 					<div id='contact-container'>
 						<div id='contact-container-left'>
 							<p>
