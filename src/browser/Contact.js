@@ -1,7 +1,12 @@
 import React from 'react';
 import Translation from './Translation';
+import PropTypes from 'prop-types';
 
 export default class Contact extends React.Component {
+	static contextTypes = {
+		lang: PropTypes.string
+	};
+
 	constructor(props) {
 		super(props);
 
@@ -12,7 +17,9 @@ export default class Contact extends React.Component {
 				email: '',
 				phone: '',
 				message: ''
-			}
+			},
+			formSending: false,
+			formSent: false
 		};
 	}
 
@@ -41,8 +48,11 @@ export default class Contact extends React.Component {
 
 		if(Object.keys(errors).length > 0) {
 			console.log(errors);
-			return;
+			// CHANGE
+			//return;
 		}
+
+		this.setState({formSending: true, formEnabled: false});
 
         fetch('/send', {
             headers: {
@@ -53,12 +63,14 @@ export default class Contact extends React.Component {
             credentials: 'same-origin',
             body: 'form-name=contact&test=test'
         })
-        .then(() => console.log('ok'));
+        .then(() => {
+        	console.log('ok');
+        	this.setState({formSent: true, formEnabled: false});
+        });
 	}
 
 	render() {
-		const lang = 'en';
-		/* TODOOOOOOOOOOOOOOOOOOOOOOOO */
+		const { lang } = this.context;
 		const tr = Translation(lang);
 		const inputStyle = {width: '300px'};
 		const {
@@ -68,7 +80,9 @@ export default class Contact extends React.Component {
 				phone,
 				name,
 				message
-			}
+			},
+			formSending,
+			formSent
 		} = this.state;
 
 		return(
@@ -82,7 +96,10 @@ export default class Contact extends React.Component {
 								<br />Do you want to talk to me about your project ?
 								<br /><br />
 								Contact me now !<br /><br />
-								<button disabled='true' >Send</button>
+								<button onClick={this.handleSubmit}
+									disabled={!formEnabled} >
+									{formSent ? tr('contact-button-sent') : (formSending ? tr('contact-button-sending') : tr('contact-button-send'))}
+								</button>
 							</p>
 						</div>
 						<div id='contact-container-right'>

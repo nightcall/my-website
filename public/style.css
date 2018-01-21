@@ -357,11 +357,25 @@ footer {
 	background-color: #f74567;
 }
 
-button:disabled,
-button[disabled] {
-	background-color: blue;
+#contact button:disabled,
+#contact button[disabled] {
+	color: white;
+	background-color: #f74567;
+	opacity: 0.8;
+	cursor: context-menu;
 }
 
 .selectedLang {
 	color: #f74567;
+}
+
+img.slider-arrow {
+	width: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	opacity: 0.8;
+}
+
+.slider-arrow:hover {
+	opacity: 1;
 }

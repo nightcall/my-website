@@ -1,8 +1,13 @@
 import React from 'react';
 import Translation from './Translation';
+import PropTypes from 'prop-types';
 import Slider from './Slider';
 
 export default class Project extends React.Component {
+	static contextTypes = {
+		lang: PropTypes.string
+	};
+
 	constructor(props) {
 		super(props);
 
@@ -32,13 +37,13 @@ export default class Project extends React.Component {
 	}
 
 	render() {
-		const lang = 'en'; /* TODOOO */
+		const { lang } = this.context; /* TODOOO */
 		const tr = Translation(lang);
 		const { id } = this.props;
 		const { currentSlide } = this.state;
 
 		const desc = <p>{tr('project-description')[id][currentSlide]}</p>;
-		const content = this.props.video ? <iframe src="https://player.vimeo.com/video/107622035?title=0&byline=0&portrait=0" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> : (
+		const content = this.props.video ? <p>Video</p> : (
 			<Slider id={id} currentSlide={currentSlide}
 				handleNextSlide={this.handleNextSlide}
 				handlePreviousSlide={this.handlePreviousSlide} />

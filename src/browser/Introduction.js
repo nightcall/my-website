@@ -1,11 +1,20 @@
 import React from 'react';
+import Translation from './Translation';
+import PropTypes from 'prop-types';
 
 export default class Introduction extends React.Component {
+	static contextTypes = {
+		lang: PropTypes.string
+	};
+
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
+		const { lang } = this.context;
+		const tr = Translation(lang);
+
 		return(
 			<div id='introduction'>
 				<div className='container_1024'>
@@ -19,7 +28,7 @@ export default class Introduction extends React.Component {
 						<br />
 						You can see <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>examples of my work</a> below.<br />
 						<br />
-						<a href='#contact' className='contact-link'>Contact me now</a>
+						<a href='#contact' className='contact-link'>{tr('intro-button-contact-me')}</a>
 					</p>
 				</div>
 			</div>

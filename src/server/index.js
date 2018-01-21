@@ -11,6 +11,7 @@ const template = (lang) => {
 			<head>
 				<meta charset="utf-8" />
 				<link rel='stylesheet' href='/style.css' />
+				<link rel="icon" type="image/png" href="/favicon.png">
 				<title>Yassine Blue - Portfolio</title>
 			</head>
 			<body>

@@ -1,19 +1,28 @@
 import React from 'react';
+import Translation from './Translation';
+import PropTypes from 'prop-types';
 
 export default class AboutMe extends React.Component {
+	static contextTypes = {
+		lang: PropTypes.string
+	};
+
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
+		const { lang } = this.context;
+		const tr = Translation(lang);
+
 		return(
 			<div id='about'>
 				<div className='container_1024'>
-					<h1>What can I do for you ?</h1>
+					<h1>{tr('about-title')}</h1>
 
 					<div className='about-row'>
 						<div className='about-col'>
-							<h3>Design</h3>
+							<h3>{tr('about-design-title')}</h3>
 							<img src='/design.svg' alt='design' />
 							{/*<p>
 							<span className='underline'>Conception de logotype, d'identité visuelle et
@@ -26,13 +35,13 @@ export default class AboutMe extends React.Component {
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
 							</p></div>
 						<div className='about-col'>
-							<h3>Develop</h3>
+							<h3>{tr('about-develop-title')}</h3>
 							<img src='/develop.svg' alt='design' />
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
 							</p>
 						</div>
 						<div className='about-col'>
-							<h3>Direct</h3>
+							<h3>{tr('about-video-title')}</h3>
 							<img src='/video.svg' alt='design' />
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
 							</p>
