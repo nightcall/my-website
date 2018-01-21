@@ -19,7 +19,7 @@ export default class Slider extends React.Component {
 					<img className='slider-arrow' src='/arrow-left.png' alt='left' onClick={handlePreviousSlide} />
 					<img className='slider-arrow' src='/arrow-right.png' alt='right'	onClick={handleNextSlide} />
 				</div>
-				<img src={`/img/project_${id}_${currentSlide}.png`} alt='slider' />
+				<img src={`/img/project_${id}_${currentSlide}.jpg`} alt='slider' />
 			</div>
 		);
 	}

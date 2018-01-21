@@ -42,8 +42,16 @@ export default class Project extends React.Component {
 		const { id } = this.props;
 		const { currentSlide } = this.state;
 
-		const desc = <p>{tr('project-description')[id][currentSlide]}</p>;
-		const content = this.props.video ? <p>Video</p> : (
+		const desc = (<div className='project-description'>
+						{tr('project-description')[id]}
+					</div>);
+		const content = this.props.video ? (
+			<div style={{width: '480px', height: '300px'}} >
+				<iframe src={this.props.video}
+				width="480" height="270" frameBorder="0" webkitallowfullscreen='true'
+				mozallowfullscreen='true' allowFullScreen='true'></iframe>
+			</div>
+		) : (
 			<Slider id={id} currentSlide={currentSlide}
 				handleNextSlide={this.handleNextSlide}
 				handlePreviousSlide={this.handlePreviousSlide} />

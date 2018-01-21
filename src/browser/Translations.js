@@ -1,3 +1,5 @@
+import React from 'react';
+
 const translations = {
 	en: {
 		'navbar-home': 'Home',
@@ -27,21 +29,45 @@ const translations = {
 
 		'projects-title': 'Some of my work',
 		'project-description': [
-			[
-				'desc lang=en project=0, slide=0',
-				'desc lang=en project=0, slide=1',
-				'desc lang=en project=0, slide=2'
-			],
-			[
-				'desc lang=en project=1, slide=0',
-				'desc lang=en project=1, slide=1',
-				'desc lang=en project=1, slide=2'
-			],
-			[
-				'desc lang=en project=2, slide=0',
-				'desc lang=en project=2, slide=1',
-				'desc lang=en project=2, slide=2'
-			]
+			(<React.Fragment>
+				<h3>Refonte d'identité visuelle</h3>
+				<h6>Jeux du Golfe</h6>
+				<p>Deuxième édition des Jeux du Golfe. Création d'un nouveau logo et d'une nouvelle identité visuelle.
+				Réalisation d'affiche et du design des maillots des participants.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				Adobe InDesign.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3 className='project-left'>Design de flyer</h3>
+				<h6 className='project-left'>Etapa Tapas</h6>
+				<p className='project-left'>Réalisation d'un flyer pour Etapa Tapas, circuit touristique de découverte de tapas à Barcelone.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				Adobe InDesign.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3>Design de logotype</h3>
+				<h6>The Source</h6>
+				<p>Réalisation du logo de The Source Export Company, entreprise d'import-export
+				de pièces automobiles située à Dubaï.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3 className='project-left'>Motion Design</h3>
+				<h6 className='project-left'>KeepYourMoneySafe.com</h6>
+				<p className='project-left'>Création d'une vidéo explicative pour KeepYourMoneySafe,
+				une entreprise dd'envoi d'argent à l'étranger.<br />
+				Softwares utilisés: <span className='underline'>Adobe Première, Adobe After Effects.</span></p>
+			</React.Fragment>),
+				
+			(<React.Fragment>
+				<h3>Motion Design</h3>
+				<h6>Goldize</h6>
+				<p>Création d'une vidéo explicative pour AG Conseil, Barcelone.<br />
+				Softwares utilisés: <span className='underline'>Adobe Première, Adobe After Effects.</span></p>
+			</React.Fragment>),
 		],
 	},
 	fr: {
@@ -72,21 +98,45 @@ const translations = {
 
 		'projects-title': 'Quelques projets',
 		'project-description': [
-			[
-				'desc lang=fr project=0, slide=0',
-				'desc lang=fr project=0, slide=1',
-				'desc lang=fr project=0, slide=2'
-			],
-			[
-				'desc lang=fr project=1, slide=0',
-				'desc lang=fr project=1, slide=1',
-				'desc lang=fr project=1, slide=2'
-			],
-			[
-				'desc lang=fr project=2, slide=0',
-				'desc lang=fr project=2, slide=1',
-				'desc lang=fr project=2, slide=2'
-			]
+			(<React.Fragment>
+				<h3>Refonte d'identité visuelle</h3>
+				<h6>Jeux du Golfe</h6>
+				<p>Deuxième édition des Jeux du Golfe. Création d'un nouveau logo et d'une nouvelle identité visuelle.
+				Réalisation d'affiche et du design des maillots des participants.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				Adobe InDesign.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3 className='project-left'>Design de flyer</h3>
+				<h6 className='project-left'>Etapa Tapas</h6>
+				<p className='project-left'>Réalisation d'un flyer pour Etapa Tapas, circuit touristique de découverte de tapas à Barcelone.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				Adobe InDesign.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3>Design de logotype</h3>
+				<h6>The Source</h6>
+				<p>Réalisation du logo de The Source Export Company, entreprise d'import-export
+				de pièces automobiles située à Dubaï.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3 className='project-left'>Motion Design</h3>
+				<h6 className='project-left'>KeepYourMoneySafe.com</h6>
+				<p className='project-left'>Création d'une vidéo explicative pour KeepYourMoneySafe,
+				une entreprise dd'envoi d'argent à l'étranger.<br />
+				Softwares utilisés: <span className='underline'>Adobe Première, Adobe After Effects.</span></p>
+			</React.Fragment>),
+				
+			(<React.Fragment>
+				<h3>Motion Design</h3>
+				<h6>Goldize</h6>
+				<p>Création d'une vidéo explicative pour AG Conseil, Barcelone.<br />
+				Softwares utilisés: <span className='underline'>Adobe Première, Adobe After Effects.</span></p>
+			</React.Fragment>),
 		],
 	},
 	es: {
@@ -117,21 +167,45 @@ const translations = {
 
 		'projects-title': 'Algunos proyectos',
 		'project-description': [
-			[
-				'desc lang=es project=0, slide=0',
-				'desc lang=es project=0, slide=1',
-				'desc lang=es project=0, slide=2'
-			],
-			[
-				'desc lang=es project=1, slide=0',
-				'desc lang=es project=1, slide=1',
-				'desc lang=es project=1, slide=2'
-			],
-			[
-				'desc lang=es project=2, slide=0',
-				'desc lang=es project=2, slide=1',
-				'desc lang=es project=2, slide=2'
-			]
+			(<React.Fragment>
+				<h3>Refonte d'identité visuelle</h3>
+				<h6>Jeux du Golfe</h6>
+				<p>Deuxième édition des Jeux du Golfe. Création d'un nouveau logo et d'une nouvelle identité visuelle.
+				Réalisation d'affiche et du design des maillots des participants.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				Adobe InDesign.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3 className='project-left'>Design de flyer</h3>
+				<h6 className='project-left'>Etapa Tapas</h6>
+				<p className='project-left'>Réalisation d'un flyer pour Etapa Tapas, circuit touristique de découverte de tapas à Barcelone.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				Adobe InDesign.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3>Design de logotype</h3>
+				<h6>The Source</h6>
+				<p>Réalisation du logo de The Source Export Company, entreprise d'import-export
+				de pièces automobiles située à Dubaï.<br />
+				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop.</span></p>
+			</React.Fragment>),
+
+			(<React.Fragment>
+				<h3 className='project-left'>Motion Design</h3>
+				<h6 className='project-left'>KeepYourMoneySafe.com</h6>
+				<p className='project-left'>Création d'une vidéo explicative pour KeepYourMoneySafe,
+				une entreprise dd'envoi d'argent à l'étranger.<br />
+				Softwares utilisés: <span className='underline'>Adobe Première, Adobe After Effects.</span></p>
+			</React.Fragment>),
+				
+			(<React.Fragment>
+				<h3>Motion Design</h3>
+				<h6>Goldize</h6>
+				<p>Création d'une vidéo explicative pour AG Conseil, Barcelone.<br />
+				Softwares utilisés: <span className='underline'>Adobe Première, Adobe After Effects.</span></p>
+			</React.Fragment>),
 		],
 	}
 };
