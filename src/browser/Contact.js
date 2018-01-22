@@ -19,7 +19,13 @@ export default class Contact extends React.Component {
 				message: ''
 			},
 			formSending: false,
-			formSent: false
+			formSent: false,
+			errors: {
+				name: false,
+				email: false,
+				phone: false,
+				message: false
+			}
 		};
 	}
 
@@ -35,21 +41,22 @@ export default class Contact extends React.Component {
 		const isValid = {
 			name: (v) => v && v.length > 0,
 			email: (v) => v && v.length > 0 && /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v),
-			phone: (v) => /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$/i.test(v),
+			phone: (v) => v && v.length > 0 && /[0-9 ]+/.test(v),
 			message: (v) => v && v.length > 10,
 		};
 
 		/* coucou ilyes ji tai pique ton code */
-		let errors = {};
+		let errors =  {};
 		for(let key in isValid) {
 			if(!isValid[key](this.state.data[key]))
 				errors[key] = true;
 		}
 
+		this.setState({errors: errors});
+
 		if(Object.keys(errors).length > 0) {
 			console.log(errors);
-			// CHANGE
-			//return;
+			return;
 		}
 
 		this.setState({formSending: true, formEnabled: false});
@@ -82,7 +89,8 @@ export default class Contact extends React.Component {
 				message
 			},
 			formSending,
-			formSent
+			formSent,
+			errors
 		} = this.state;
 
 		return(
@@ -106,16 +114,16 @@ export default class Contact extends React.Component {
 							<form style={{width: '400px'}}>
 								<input style={inputStyle} value={name} type='text' name='name'
 									placeholder={tr('contact-placeholder-name')} onChange={this.setData}
-									disabled={!formEnabled} />
+									disabled={!formEnabled} className={errors.name ? 'red-border' : ''}/>
 								<input style={inputStyle} value={email} type='text' name='email'
 									placeholder={tr('contact-placeholder-email')} onChange={this.setData}
-									disabled={!formEnabled} />
+									disabled={!formEnabled} className={errors.email ? 'red-border' : ''}/>
 								<input style={inputStyle} value={phone} type='text' name='phone'
 									placeholder={tr('contact-placeholder-phone')} onChange={this.setData}
-									disabled={!formEnabled} />
+									disabled={!formEnabled} className={errors.phone ? 'red-border' : ''}/>
 								<textarea style={{height: '150px'}} value={message} name='message'
 									placeholder={tr('contact-placeholder-message')} onChange={this.setData}
-									disabled={!formEnabled} />
+									disabled={!formEnabled} className={errors.message ? 'red-border' : ''} />
 							</form>
 						</div>
 					</div>
