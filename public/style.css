@@ -340,11 +340,15 @@ footer {
 
 .about-col {
 	flex-grow: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .about-col img {
 	width: 100px;
-	margin: auto;
 }
 
 .about-col h3 {
@@ -363,7 +367,7 @@ footer {
 }
 
 .about-col p {
-	margin-top: 20px;
+	padding-top: 20px;
 	text-align: center;
 }
 

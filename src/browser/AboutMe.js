@@ -32,19 +32,16 @@ export default class AboutMe extends React.Component {
 							précèdemmment.<br /><br />
 							Technologies et softwares utilisés: <span className='underline'>Adobe Première, Illustrator, InDesign</span></p>
 						*/}
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
-							</p></div>
+						{tr('about-design-desc')}</div>
 						<div className='about-col'>
 							<h3>{tr('about-develop-title')}</h3>
 							<img src='/develop.svg' alt='design' />
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
-							</p>
+							{tr('about-develop-desc')}
 						</div>
 						<div className='about-col'>
 							<h3>{tr('about-video-title')}</h3>
 							<img src='/video.svg' alt='design' />
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus congue erat id consequat. Ut aliquet diam ut nibh dapibus gravida. Praesent lacinia gravida lacus ut dapibus. Maecenas id tortor nisi. In convallis, lectus sit amet convallis fermentum, lacus odio rhoncus justo, et faucibus diam mauris nec nibh. Suspendisse vel mauris ut
-							</p>
+							{tr('about-video-desc')}
 						</div>
 					</div>
 					{/*<img src='/braces.svg' alt='braces' style={{width: '200px'}}/>

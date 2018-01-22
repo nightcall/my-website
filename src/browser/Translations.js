@@ -30,27 +30,26 @@ const translations = {
 		'projects-title': 'Some of my work',
 		'project-description': [
 			(<React.Fragment>
-				<h3>Refonte d'identité visuelle</h3>
+				<h3>Visual identity</h3>
 				<h6>Jeux du Golfe</h6>
-				<p>Deuxième édition des Jeux du Golfe. Création d'un nouveau logo et d'une nouvelle identité visuelle.
-				Réalisation d'affiche et du design des maillots des participants.<br />
-				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				<p>Second edition of the Jeux du Golfe (Games of the Gulf). Creation of a new logo and visual identity.
+				Design of the poster and jerseys for the players.<br />
+				Softwares used: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
 				Adobe InDesign.</span></p>
 			</React.Fragment>),
 
 			(<React.Fragment>
-				<h3 className='project-left'>Design de flyer</h3>
+				<h3 className='project-left'>Flyer design</h3>
 				<h6 className='project-left'>Etapa Tapas</h6>
-				<p className='project-left'>Réalisation d'un flyer pour Etapa Tapas, circuit touristique de découverte de tapas à Barcelone.<br />
-				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+				<p className='project-left'>TODO<br />
+				Softwares used: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
 				Adobe InDesign.</span></p>
 			</React.Fragment>),
 
 			(<React.Fragment>
-				<h3>Design de logotype</h3>
+				<h3>Logo design</h3>
 				<h6>The Source</h6>
-				<p>Réalisation du logo de The Source Export Company, entreprise d'import-export
-				de pièces automobiles située à Dubaï.<br />
+				<p>Making of the logo of The Source Export Company, a company of import-export of car pieces Located in Dubaï.<br />
 				Softwares utilisés: <span className='underline'>Adobe Illustrator, Adobe Photoshop.</span></p>
 			</React.Fragment>),
 
@@ -90,11 +89,24 @@ const translations = {
 
 		'about-title': 'Ce que je peux faire',
 		'about-design-title': 'Designer',
-		'about-design-desc': 'TODO',
+		'about-design-desc': (<p>
+			Réalisation de design d'interface, webdesign, design de logotype ou encore recherche
+			d'identité visuelle. Je propose un service sur mesure et adapté à votre projet.
+			<br /><br />Softwares et technologies utilisées: <span className='underline'>Adobe Illustrator, Adobe Photoshop,
+			Adobe InDesign</span>
+			</p>),
 		'about-develop-title': 'Développer',
-		'about-develop-desc': 'TODO',
+		'about-develop-desc': (<p>
+			Developpement d'applications web coté client (Front-end) et coté serveur (Back-end).
+			Installation de gestionnaire de contenus (CMS).
+			<br /><br />Softwares et technologies utilisées: <span className='underline'>HTML5, CSS3, PHP, SQL,
+			Javascript (ReactJS, Node, Express), WordPress.</span>
+			</p>),
 		'about-video-title': 'Réaliser',
-		'about-video-desc': 'TODO',
+		'about-video-desc': (<p>
+			Conception et réalisation de projets vidéo et motion design.
+			<br /><br />Softwares et technologies utilisées: <span className='underline'>Adobe Première, Adobe After Effects, Adobe Illustrator.</span>
+			</p>),
 
 		'projects-title': 'Quelques projets',
 		'project-description': [
