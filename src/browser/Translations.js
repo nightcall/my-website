@@ -19,7 +19,7 @@ const translations = {
 		'intro-button-contact-me': 'Contact me now',
 		'intro-text': 'TODO',
 
-		'about-title': 'What I can do',
+		'about-title': 'My services',
 		'about-design-title': 'Design',
 		'about-design-desc': 'TODO',
 		'about-develop-title': 'Develop',
@@ -87,8 +87,8 @@ const translations = {
 		'intro-button-contact-me': 'Me contacter',
 		'intro-text': 'TODO',
 
-		'about-title': 'Ce que je peux faire',
-		'about-design-title': 'Designer',
+		'about-title': 'Mes services',
+		'about-design-title': 'Concevoir',
 		'about-design-desc': (<p>
 			Réalisation de design d'interface, webdesign, design de logotype ou encore recherche
 			d'identité visuelle. Je propose un service sur mesure et adapté à votre projet.
@@ -169,7 +169,7 @@ const translations = {
 		'intro-button-contact-me': 'Contactarme',
 		'intro-text': 'TODO',
 
-		'about-title': 'Lo que puedo hacer',
+		'about-title': 'Mis servicios',
 		'about-design-title': 'Diseñar',
 		'about-design-desc': 'TODO',
 		'about-develop-title': 'Desarrollar',

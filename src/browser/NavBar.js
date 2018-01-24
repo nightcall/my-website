@@ -20,7 +20,7 @@ export default class NavBar extends React.Component {
 			<div id='nav-bar'>
 				<nav>
 					<div>
-						<h3><a href='/'>{tr('navbar-home')}</a></h3>
+						<h3><a href={`/${lang === 'en' ? '' : lang}`}>{tr('navbar-home')}</a></h3>
 						<h3><a href='#about'>{tr('navbar-about')}</a></h3>
 						<h3><a href='#projects'>{tr('navbar-projects')}</a></h3>
 						<h3><a href='#contact'>{tr('navbar-contact')}</a></h3>

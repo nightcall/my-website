@@ -114,11 +114,29 @@ nav div h6 a:hover {
 #about {
 	background-image: url('/bg-about-me.png');
 	background-repeat: repeat-x;
+	animation: pointsX 0.4s linear infinite;
 	padding-bottom: 70px;
 }
 
+@keyframes pointsY {
+	to {
+		background-position: 0px 0px;
+	} to {
+		background-position: 0px 8px;
+	}
+}
+
+@keyframes pointsX {
+	to {
+		background-position: 0px 0px;
+	} to {
+		background-position: 8px 0px;
+	}
+}
+
 #projects {
-	background-color: #f7f7f7;}
+	background-color: #f7f7f7;
+}
 
 #projects .container_1024 {
 	background-image: url('/bg-projects.png');
@@ -287,6 +305,7 @@ footer {
 
 .slider-arrows img {
 	width: 100px;
+	cursor: pointer;
 }
 
 .slider-arrows img:hover {
@@ -349,6 +368,18 @@ footer {
 
 .about-col img {
 	width: 100px;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}
+
+.about-col img:hover {
+	animation: rotation 0.5s forwards ease-out;
 }
 
 .about-col h3 {

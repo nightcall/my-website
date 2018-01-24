@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static(__dirname + '/../../public'));
 
-const template = (lang) => {
+const template = () => {
 	return `
 			<!DOCTYPE html>
 		<html>
@@ -16,7 +16,6 @@ const template = (lang) => {
 			</head>
 			<body>
 				<div id='root'></div>
-				<script>var __lang = '${lang}';</script>
 				<script src='/bundle.js'></script>
 			</body>
 		</html>`;
@@ -28,14 +27,9 @@ app.post('/send', (req, res) => {
 	res.end();
 });
 
-app.get('/:lang/', (req, res) => {
-	res.setHeader('Content-Type', 'text/html');
-	res.send(template(req.params.lang));
-})
-
 app.get('*', (req, res) => {
 	res.setHeader('Content-Type', 'text/html');
-	res.send(template('en'));
+	res.send(template());
 });
 
 app.listen(8080);

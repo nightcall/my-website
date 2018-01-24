@@ -19,7 +19,7 @@ export default class Slider extends React.Component {
 			else
 				return {currentSlide: prevState.currentSlide + 1};
 		},
-		Animated.timing(this.state.marginLeft, {toValue: -480 * this.state.currentSlide}).start)
+		() => Animated.timing(this.state.marginLeft, {toValue: -480 * this.state.currentSlide}).start())
 	}
 
 	previous = () => {
@@ -30,7 +30,7 @@ export default class Slider extends React.Component {
 			else
 				return {currentSlide: prevState.currentSlide - 1};
 		},
-		Animated.timing(this.state.marginLeft, {toValue: -480 * this.state.currentSlide}).start)
+		() => Animated.timing(this.state.marginLeft, {toValue: -480 * this.state.currentSlide}).start())
 	}
 
 	render() {

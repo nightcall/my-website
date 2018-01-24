@@ -1,0 +1,24 @@
+@import 'colors';
+@import 'fonts';
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+
+body {
+	background-color: $light_grey;
+	color: $medium_grey;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.container_1024 {
+	width: 1024px;
+}
