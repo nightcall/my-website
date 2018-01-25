@@ -27,8 +27,8 @@ export default class NavBar extends React.Component {
 					</div>
 					<div>
 						<h6><Link to='/' className={lang == 'en' ? 'selectedLang' : ''} onClick={this.props.handleLangChange} >EN</Link></h6>
-						<h6><Link to='/es/' className={lang == 'es' ? 'selectedLang' : ''}>ES</Link></h6>
-						<h6><Link to='/fr/' className={lang == 'fr' ? 'selectedLang' : ''}>FR</Link></h6>
+						<h6><Link to='/es' className={lang == 'es' ? 'selectedLang' : ''}>ES</Link></h6>
+						<h6><Link to='/fr' className={lang == 'fr' ? 'selectedLang' : ''}>FR</Link></h6>
 					</div>
 				</nav>
 			</div>

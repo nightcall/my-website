@@ -21,7 +21,7 @@ const template = () => {
 		</html>`;
 }
 
-app.post('/send', (req, res) => {
+app.post('/', (req, res) => {
 	console.log('Message received');
 	res.status(200);
 	res.end();

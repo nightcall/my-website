@@ -59,21 +59,26 @@ export default class Contact extends React.Component {
 			return;
 		}
 
+		// Create urlencoded body
+		const params = Object.keys(this.state.data)
+			.map(key => `${key}=${encodeURIComponent(this.state.data[key])}`);
+		params.unshift('form-name=contact');
+
 		this.setState({formSending: true, formEnabled: false});
 
-        fetch('/send', {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            method: 'post',
-            credentials: 'same-origin',
-            body: 'form-name=contact&test=test'
-        })
-        .then(() => {
-        	console.log('ok');
-        	this.setState({formSent: true, formEnabled: false});
-        });
+    fetch('/', {
+      headers: {
+      	'Accept': 'application/json',
+      	'Content-Type': 'application/x-www-form-urlencoded'
+      },
+        method: 'post',
+        credentials: 'same-origin',
+      	body: params.join('&')
+    })
+    .then(() => {
+      console.log('ok');
+      this.setState({formSent: true, formEnabled: false});
+    });
 	}
 
 	render() {
