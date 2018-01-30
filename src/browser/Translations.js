@@ -79,7 +79,7 @@ const translations = {
 			(<React.Fragment>
 				<h3>Logo design</h3>
 				<h6>The Source</h6>
-				<p>Making of the logo of The Source Export Company, a company of import-export of car pieces Located in Dubaï.<br />
+				<p>Production of the logo of The Source Export Company, a company of import-export of car pieces Located in Dubaï.<br />
 				Softwares used: <span className='underline'>Adobe Illustrator, Adobe Photoshop.</span></p>
 			</React.Fragment>),
 
