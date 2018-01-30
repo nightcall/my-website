@@ -20,7 +20,7 @@ export default class Introduction extends React.Component {
 			<div id='introduction'>
 				<div className='container_1024'>
 					<p>
-						<img src='/ellarumpf.jpg' alt='ellarumpf' />
+						<img src='/photo.jpg' alt='ellarumpf' />
 					</p>
 					<p style={{width: '600px', fontFamily: 'OpenSansLight', fontSize: '20px'}}>
 						{tr('intro-text')}
