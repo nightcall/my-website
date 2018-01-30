@@ -104,11 +104,10 @@ export default class Contact extends React.Component {
 					<h1>{tr('contact-section-title')}</h1>
 					<div id='contact-container'>
 						<div id='contact-container-left'>
-							<p>
-								Do you want to know more about what I can do ?
-								<br />Do you want to talk to me about your project ?
-								<br /><br />
-								Contact me now !<br /><br />
+							<p style={{marginRight: '20px'}}>
+								{tr('contact-text')}
+								<br />
+								<br />
 								<button onClick={this.handleSubmit}
 									disabled={!formEnabled} >
 									{formSent ? tr('contact-button-sent') : (formSending ? tr('contact-button-sending') : tr('contact-button-send'))}

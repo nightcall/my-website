@@ -1,6 +1,7 @@
 import React from 'react';
 import Translation from './Translation';
 import PropTypes from 'prop-types';
+import { scrollToDiv } from './Utils';
 
 export default class Introduction extends React.Component {
 	static contextTypes = {
@@ -21,14 +22,10 @@ export default class Introduction extends React.Component {
 					<p>
 						<img src='/ellarumpf.jpg' alt='ellarumpf' />
 					</p>
-					<p style={{fontFamily: 'OpenSansLight'}}>
-						HAILLLE ! My name is Yassine Hermellin, I can help you develop your web application.
-						<br />Whether you need to design it, build it or both.<br />
-						I can also help you build a visual identity or a motion design video.
-						<br />
-						You can see <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>examples of my work</a> below.<br />
-						<br />
-						<a href='#contact' className='contact-link'>{tr('intro-button-contact-me')}</a>
+					<p style={{width: '600px', fontFamily: 'OpenSansLight', fontSize: '20px'}}>
+						{tr('intro-text')}
+						<a href='#contact' onClick={scrollToDiv('contact')}
+							className='contact-link'>{tr('intro-button-contact-me')}</a>
 					</p>
 				</div>
 			</div>

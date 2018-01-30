@@ -24,6 +24,11 @@
 	src: url(/opensanslight.ttf);
 }
 
+@font-face {
+	font-family: OpenSansRegular;
+	src: url(/opensansregular.ttf);
+}
+
 body {
 	background-color: #f7f7f7;
 	color: #7c7c7c;
@@ -114,7 +119,6 @@ nav div h6 a:hover {
 #about {
 	background-image: url('/bg-about-me.png');
 	background-repeat: repeat-x;
-	animation: pointsX 0.4s linear infinite;
 	padding-bottom: 70px;
 }
 
@@ -140,6 +144,7 @@ nav div h6 a:hover {
 
 #projects .container_1024 {
 	background-image: url('/bg-projects.png');
+	background-position: center;
 	background-repeat: repeat-y;
 	display: flex;
 	flex-direction: column;
@@ -159,7 +164,7 @@ nav div h6 a:hover {
 }
 
 strong {
-	font-family: Consolas;
+	font-family: OpenSansRegular;
 }
 
 #introduction {
@@ -244,6 +249,8 @@ a.underline:hover {
 	justify-content: center;
 	margin-bottom: 30px;
 	background-image: url('/bg-project.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .project p {
