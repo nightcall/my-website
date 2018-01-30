@@ -27,7 +27,7 @@ const translations = {
 			<React.Fragment>
 				Do you need to <strong>develop a web application</strong>, <strong>design </strong>
 				(<span className='underline'>a logo, website, flyer, t-shirt</span>) or produce <strong>a video/motion design</strong> ?
-				<br />My name is Yassine and I can help you with your project.<br />
+				<br />My name is Yassine Hermellin and I can help you with your project.<br />
 				<br />You can browse my <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>last projets</a> below.<br />
 				<br /><br />
 			</React.Fragment>),
