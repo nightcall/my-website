@@ -119,7 +119,7 @@ const translations = {
 		'intro-button-contact-me': 'Me contacter',
 		'intro-text': (<React.Fragment>
 				Vous avez besoin de <strong>developper une application web</strong>, de <strong>concevoir </strong>
-				(<span className='underline'>Design de logo, site web, flyer, t-shirt</span>) ou de <strong>réaliser une vidéo/motion design</strong>.
+				(<span className='underline'>Design de logo, site web, flyer, t-shirt</span>) ou de <strong>réaliser une vidéo/motion design</strong> ?
 				<br />Je m'appelle Yassine Hermellin et je peux vous aider à développer votre projet.
 				<br />
 				<br />
@@ -215,7 +215,7 @@ const translations = {
 		'intro-text': (
 			<React.Fragment>
 				Necesitas <strong>desarollar una aplicación web</strong>, <strong>diseñar </strong>
-				(<span className='underline'>logotipo, página web, flyer, camiseta</span>) o <strong>producir un video/motion design</strong>. 
+				(<span className='underline'>logotipo, página web, flyer, camiseta</span>) o <strong>producir un video/motion design</strong> ? 
 				Me llamo Yassine Hermellin y le puedo ayudar a desarollar su proyecto.
 				<br />
 				<br />
