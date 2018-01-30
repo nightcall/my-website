@@ -25,14 +25,10 @@ const translations = {
 		'intro-button-contact-me': 'Contact me now',
 		'intro-text': (
 			<React.Fragment>
-				My name is Yassine Hermellin and I can help you develop your project.
-				<br />
-				Whether you need to <strong>develop a web application</strong>, <strong>design </strong>
-				(<span className='underline'>a logo, website, flyer, t-shirt</span>) or produce <strong>a video/motion design</strong>. 
-				I am versatile and know to adapt quickly.
-				<br />
-				<br />
-				You can browse my <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>last projets</a> below.<br />
+				Do you need to <strong>develop a web application</strong>, <strong>design </strong>
+				(<span className='underline'>a logo, website, flyer, t-shirt</span>) or produce <strong>a video/motion design</strong> ?
+				<br />My name is Yassine and I can help you with your project.<br />
+				<br />You can browse my <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>last projets</a> below.<br />
 				<br /><br />
 			</React.Fragment>),
 
@@ -121,13 +117,10 @@ const translations = {
 		'contact-button-sent' : 'Message envoyé !',
 
 		'intro-button-contact-me': 'Me contacter',
-		'intro-text': (
-			<React.Fragment>
-				Je m'appelle Yassine Hermellin et je peux vous aider à développer votre projet.
-				<br />
-				Qu'il s'agisse de <strong>developpement d'application web</strong>, de <strong>conception </strong>
-				(<span className='underline'>Design de logo, site web, flyer, t-shirt</span>) ou de <strong>réalisation de vidéo/motion design</strong>.
-				Je suis versatile et sait m'adapter rapidement à vos besoins.
+		'intro-text': (<React.Fragment>
+				Vous avez besoin de <strong>developper une application web</strong>, de <strong>concevoir </strong>
+				(<span className='underline'>Design de logo, site web, flyer, t-shirt</span>) ou de <strong>réaliser une vidéo/motion design</strong>.
+				<br />Je m'appelle Yassine Hermellin et je peux vous aider à développer votre projet.
 				<br />
 				<br />
 				Vous pouvez consulter mes <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>derniers projets</a> ci-dessous.<br />
@@ -221,11 +214,9 @@ const translations = {
 		'intro-button-contact-me': 'Contactarme',
 		'intro-text': (
 			<React.Fragment>
+				Necesitas <strong>desarollar una aplicación web</strong>, <strong>diseñar </strong>
+				(<span className='underline'>logotipo, página web, flyer, camiseta</span>) o <strong>producir un video/motion design</strong>. 
 				Me llamo Yassine Hermellin y le puedo ayudar a desarollar su proyecto.
-				<br />
-				Que se trate de <strong>desarollar una aplicación web</strong>, de <strong>diseñar </strong>
-				(<span className='underline'>logotipo, página web, flyer, camiseta</span>) o de <strong>producir un video/motion design</strong>. 
-				Soy versátil y se adaptarme rápidamente a su proyecto.
 				<br />
 				<br />
 				Puede consultar mis <a href='#projects' style={{backgroundColor: 'transparent'}} className='underline'>últimos proyectos</a> más abajo.<br />

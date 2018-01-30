@@ -22,7 +22,7 @@ export default class Introduction extends React.Component {
 					<p>
 						<img src='/photo.jpg' alt='ellarumpf' />
 					</p>
-					<p style={{width: '600px', fontFamily: 'OpenSansLight', fontSize: '20px'}}>
+					<p style={{textAlign: 'justify', width: '600px', fontFamily: 'OpenSansLight', fontSize: '20px'}}>
 						{tr('intro-text')}
 						<a href='#contact' onClick={scrollToDiv('contact')}
 							className='contact-link'>{tr('intro-button-contact-me')}</a>
